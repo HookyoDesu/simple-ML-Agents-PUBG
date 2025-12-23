@@ -1,0 +1,24 @@
+behaviors:
+  SurvivalAgent:
+    trainer_type: ppo
+    max_steps: 5000000
+    time_horizon: 128
+    summary_freq: 10000
+    network_settings:
+      normalize: true
+      hidden_units: 512
+      num_layers: 6
+      use_lstm: true
+      memory:
+        sequence_length: 128
+        memory_size: 512
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+      curiosity:
+        strength: 0.02
+        gamma: 0.99
+    hyperparameters:
+      beta: 0.01
+      learning_rate: 3.0e-4
