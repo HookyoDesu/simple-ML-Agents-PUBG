@@ -1,0 +1,3 @@
+MLAgentFight/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+MLAgentFight/Library/PackageCache/com.unity.burst@7a907cf5a459/.Runtime/libburst-llvm-18.dylib filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
